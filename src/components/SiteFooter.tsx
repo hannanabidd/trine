@@ -9,10 +9,10 @@ export default function SiteFooter() {
           <div className="footer-brand">
             <Link href="/" className="brand-lockup">
               <Image src="/images/Logo-White.png" alt="Trine" width={44} height={44} className="nav-badge-img" />
-              <span className="brand">
+              {/* <span className="brand">
                 <span className="word">Trine</span>
                 <span className="sub">Katrina Gall</span>
-              </span>
+              </span> */}
             </Link>
             <p>
               Built from lived experience, not theory. Trine has walked the path from burnout to

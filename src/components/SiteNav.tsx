@@ -40,15 +40,15 @@ export default function SiteNav() {
         <div className="nav-pill">
           <Link href="/" className="brand-lockup">
             <Image src="/images/Logo.svg" alt="Trine" width={38} height={38} className="nav-badge-img" unoptimized />
-            <span className="brand">
+            {/* <span className="brand">
               <span className="word">Trine</span>
               <span className="sub">Katrina Gall</span>
-            </span>
+            </span> */}
           </Link>
 
           <div className="navlinks">
             <Link href="/">Home</Link>
-
+            <Link href="/about">About</Link>
             <div
               className={`nav-item-dropdown${dropdownOpen ? " open" : ""}`}
               ref={dropdownRef}
@@ -61,23 +61,23 @@ export default function SiteNav() {
                 onClick={() => setDropdownOpen((v) => !v)}
                 aria-expanded={dropdownOpen}
               >
-                Programs
+                PROGRAMS
                 <svg width="10" height="6" viewBox="0 0 10 6" fill="none" className="chev">
                   <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </button>
               <div className="nav-dropdown-panel">
-                {PROGRAMS.map((p) => (
-                  <Link key={p.href} href={p.href} className="nav-dropdown-item" onClick={() => setDropdownOpen(false)}>
-                    <span className="dot" />
-                    <span className="name">{p.name}</span>
-                    <span className="tag">{p.tag}</span>
-                  </Link>
-                ))}
+                <div className="nav-dropdown-panel-inner">
+                  {PROGRAMS.map((p) => (
+                    <Link key={p.href} href={p.href} className="nav-dropdown-item" onClick={() => setDropdownOpen(false)}>
+                      <span className="dot" />
+                      <span className="name">{p.name}</span>
+                      <span className="tag">{p.tag}</span>
+                    </Link>
+                  ))}
+                </div>
               </div>
             </div>
-
-            <Link href="/about">About Trine</Link>
             <Link href="/contact">Contact</Link>
           </div>
 

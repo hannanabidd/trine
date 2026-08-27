@@ -16,10 +16,10 @@ export default function ApplyPage() {
         <div className="wrap">
           <Link href="/" className="brand-lockup">
             <Image src="/images/Logo.svg" alt="Trine" width={34} height={34} className="nav-badge-img" unoptimized />
-            <span className="brand">
+            {/* <span className="brand">
               <span className="word">Trine</span>
               <span className="sub">Katrina Gall</span>
-            </span>
+            </span> */}
           </Link>
           <Link href="/" className="backlink">← Back to site</Link>
         </div>

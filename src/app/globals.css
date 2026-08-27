@@ -169,7 +169,7 @@ nav {
 nav .wrap {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 14px 32px;
   gap: 24px;
 }
@@ -223,11 +223,12 @@ nav.site-nav {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding: 10px 14px 10px 16px;
+  width: 100%;
+  border-radius: 100px;
+  padding: 14px 28px;
   background: rgba(255, 255, 255, 0.78);
   backdrop-filter: blur(16px);
   border: 1px solid var(--line);
-  border-radius: 20px;
   box-shadow: 0 20px 50px -26px rgba(16, 25, 21, 0.3);
 }
 .brand-lockup {
@@ -295,19 +296,15 @@ nav.site-nav {
 }
 .nav-dropdown-panel {
   position: absolute;
-  top: calc(100% + 16px);
+  top: 100%;
   left: 50%;
-  transform: translateX(-50%) translateY(-6px);
+  transform: translateX(-50%);
   width: 320px;
-  background: var(--white);
-  border-radius: 18px;
-  border: 1px solid var(--line);
-  box-shadow: 0 30px 70px -24px rgba(16, 25, 21, 0.35);
-  padding: 8px;
+  padding-top: 16px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
+  transition: opacity 0.18s ease, visibility 0.18s;
   z-index: 60;
 }
 .nav-item-dropdown:hover .nav-dropdown-panel,
@@ -315,7 +312,19 @@ nav.site-nav {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  transform: translateX(-50%) translateY(0);
+}
+.nav-dropdown-panel-inner {
+  background: var(--white);
+  border-radius: 18px;
+  border: 1px solid var(--line);
+  box-shadow: 0 30px 70px -24px rgba(16, 25, 21, 0.35);
+  padding: 8px;
+  transform: translateY(-6px);
+  transition: transform 0.18s ease;
+}
+.nav-item-dropdown:hover .nav-dropdown-panel-inner,
+.nav-item-dropdown.open .nav-dropdown-panel-inner {
+  transform: translateY(0);
 }
 .nav-dropdown-item {
   display: flex;
@@ -2101,7 +2110,7 @@ form {
   }
   .nav-pill {
     padding: 8px 8px 8px 12px;
-    border-radius: 16px;
+    border-radius: 100px;
   }
   .mobile-overlay {
     padding: 90px 24px 40px;
