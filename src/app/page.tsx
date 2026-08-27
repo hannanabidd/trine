@@ -15,6 +15,7 @@ export default function Home() {
 
       {/* ================= HERO ================= */}
       <section className="hero">
+        <Image src="/images/elements02.png" alt="" aria-hidden="true" width={1024} height={1536} className="hero-vine" />
         <div className="wrap hero-grid">
           <div className="reveal">
             <div className="eyebrow">For the successful and quietly exhausted</div>

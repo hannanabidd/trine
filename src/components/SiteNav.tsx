@@ -32,10 +32,10 @@ export default function SiteNav() {
 
           <div className="navlinks">
             <Link href="/">Home</Link>
+            <Link href="/about">About</Link>
             {PROGRAMS.map((p) => (
               <Link key={p.href} href={p.href}>{p.name}</Link>
             ))}
-            <Link href="/about">About</Link>
             <Link href="/contact">Contact</Link>
           </div>
 

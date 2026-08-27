@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
@@ -17,6 +18,7 @@ export default function KitchenResetPage() {
       <SiteNav />
 
       <section className="atmos-hero">
+        <Image src="/images/elements03.png" alt="" aria-hidden="true" fill className="vine-frame" />
         <div className="wrap">
           <div className="eyebrow">Free · Coming soon</div>
           <h1>Sometimes change starts in the kitchen.</h1>
@@ -34,7 +36,8 @@ export default function KitchenResetPage() {
         </div>
       </section>
 
-      <section className="story">
+      <section className="story with-leaf">
+        {/* <Image src="/images/elements.png" alt="" aria-hidden="true" width={817} height={1218} className="leaf-accent leaf-left" /> */}
         <div className="wrap-narrow">
           <h2>This isn&apos;t a diet. It&apos;s a reset.</h2>
           <p>

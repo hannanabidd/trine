@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
+import FaqItem from "@/components/FaqItem";
 
 export const metadata: Metadata = {
   title: "The 8-Week Program · Trine",
@@ -104,22 +105,18 @@ export default function EightWeekPage() {
           <div className="eyebrow">Before you apply</div>
           <h2 style={{ margin: "16px 0 30px", fontSize: "clamp(26px, 3.2vw, 36px)" }}>A few honest answers</h2>
 
-          <div className="faq-item">
-            <h3>What if I&apos;m not sure this is the exact right fit?</h3>
-            <p>That&apos;s exactly what the application is for. It&apos;s a short, honest conversation on paper before we ever get on a call. If it&apos;s not quite right, I&apos;ll tell you, and point you somewhere that is.</p>
-          </div>
-          <div className="faq-item">
-            <h3>Is $897 payable over time?</h3>
-            <p>Yes. If a payment plan makes this easier to say yes to, just say so in your application. It won&apos;t change your spot in the group.</p>
-          </div>
-          <div className="faq-item">
-            <h3>What if I can&apos;t make every single weekly call?</h3>
-            <p>Life happens. What matters is that you&apos;re mostly there and fully present when you are. Small groups only work when people actually show up.</p>
-          </div>
-          <div className="faq-item">
-            <h3>When does the next cohort start?</h3>
-            <p>Applications open quarterly. Apply any time and I&apos;ll let you know exactly when the next group begins.</p>
-          </div>
+          <FaqItem question="What if I'm not sure this is the exact right fit?">
+            That&apos;s exactly what the application is for. It&apos;s a short, honest conversation on paper before we ever get on a call. If it&apos;s not quite right, I&apos;ll tell you, and point you somewhere that is.
+          </FaqItem>
+          <FaqItem question="Is $897 payable over time?">
+            Yes. If a payment plan makes this easier to say yes to, just say so in your application. It won&apos;t change your spot in the group.
+          </FaqItem>
+          <FaqItem question="What if I can't make every single weekly call?">
+            Life happens. What matters is that you&apos;re mostly there and fully present when you are. Small groups only work when people actually show up.
+          </FaqItem>
+          <FaqItem question="When does the next cohort start?">
+            Applications open quarterly. Apply any time and I&apos;ll let you know exactly when the next group begins.
+          </FaqItem>
         </div>
       </section>
 

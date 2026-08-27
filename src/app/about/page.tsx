@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
+import FaqItem from "@/components/FaqItem";
 
 export const metadata: Metadata = {
   title: "About Trine · Katrina Gall",
@@ -16,6 +17,7 @@ export default function AboutPage() {
       <SiteNav />
 
       <section className="page-hero">
+        <Image src="/images/elements.png" alt="" aria-hidden="true" width={817} height={1218} className="leaf-accent" />
         <div className="wrap-narrow">
           <div className="eyebrow">About Trine</div>
           <h1>Built from lived experience. Not a textbook.</h1>
@@ -155,44 +157,31 @@ export default function AboutPage() {
           <div className="eyebrow">Got a question</div>
           <h2 style={{ margin: "16px 0 30px", fontSize: "clamp(26px, 3.2vw, 36px)" }}>Frequently asked</h2>
 
-          <div className="faq-item">
-            <h3>What does working with Trine actually look like?</h3>
-            <p>
-              Every engagement starts with a real conversation about where you&apos;re at, what
-              you&apos;re carrying, and what you actually want. From there we figure out the right fit
-              together. Nothing here is generic.
-            </p>
-          </div>
-          <div className="faq-item">
-            <h3>How is this different from other coaching?</h3>
-            <p>
-              I don&apos;t treat you like one problem to solve. Your body, your habits, your identity and
-              your relationships are tangled together, so the work looks at all of it rather than picking
-              one thing to fix in isolation. And I&apos;m not coaching from theory. I&apos;ve done my own
-              version of this rebuild.
-            </p>
-          </div>
-          <div className="faq-item">
-            <h3>Who is this for?</h3>
-            <p>
-              People who&apos;ve achieved a lot and are quietly questioning what&apos;s next. People done
-              with surface-level fixes, ready to look at the bigger picture. Reclaim Her is specifically
-              for women; everything else is open to anyone standing at that same crossroads. The easiest
-              way to know if it&apos;s a fit is a conversation.
-            </p>
-          </div>
-          <div className="faq-item">
-            <h3>Where are sessions held?</h3>
-            <p>Online, by video call. I&apos;m based in Brisbane, and work with people across Australia and internationally.</p>
-          </div>
-          <div className="faq-item">
-            <h3>How do I get started?</h3>
-            <p>
-              Book a chat. No pressure, no pitch. Just an honest conversation about where you&apos;re at
-              and whether I can actually help. If it&apos;s a fit, I&apos;ll tell you what&apos;s next. If
-              it&apos;s not, I&apos;ll tell you that too.
-            </p>
-          </div>
+          <FaqItem question="What does working with Trine actually look like?">
+            Every engagement starts with a real conversation about where you&apos;re at, what
+            you&apos;re carrying, and what you actually want. From there we figure out the right fit
+            together. Nothing here is generic.
+          </FaqItem>
+          <FaqItem question="How is this different from other coaching?">
+            I don&apos;t treat you like one problem to solve. Your body, your habits, your identity and
+            your relationships are tangled together, so the work looks at all of it rather than picking
+            one thing to fix in isolation. And I&apos;m not coaching from theory. I&apos;ve done my own
+            version of this rebuild.
+          </FaqItem>
+          <FaqItem question="Who is this for?">
+            People who&apos;ve achieved a lot and are quietly questioning what&apos;s next. People done
+            with surface-level fixes, ready to look at the bigger picture. Reclaim Her is specifically
+            for women; everything else is open to anyone standing at that same crossroads. The easiest
+            way to know if it&apos;s a fit is a conversation.
+          </FaqItem>
+          <FaqItem question="Where are sessions held?">
+            Online, by video call. I&apos;m based in Brisbane, and work with people across Australia and internationally.
+          </FaqItem>
+          <FaqItem question="How do I get started?">
+            Book a chat. No pressure, no pitch. Just an honest conversation about where you&apos;re at
+            and whether I can actually help. If it&apos;s a fit, I&apos;ll tell you what&apos;s next. If
+            it&apos;s not, I&apos;ll tell you that too.
+          </FaqItem>
         </div>
       </section>
 

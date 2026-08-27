@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
@@ -17,6 +18,7 @@ export default function ReclaimHerPage() {
       <SiteNav />
 
       <section className="page-hero">
+        <Image src="/images/elements04.png" alt="" aria-hidden="true" width={1024} height={1536} className="leaf-accent" />
         <div className="wrap-narrow">
           <div className="eyebrow">The 6-month identity &amp; transformation program</div>
           <h1>You&apos;ve built a successful life. Now it&apos;s time to build one that feels like yours.</h1>
