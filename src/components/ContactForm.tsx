@@ -10,7 +10,7 @@ export default function ContactForm() {
     const email = (data.get("Email") as string) || "";
     const message = (data.get("Message") as string) || "";
     const subject = encodeURIComponent(`Message from ${name}`);
-    const body = encodeURIComponent(`${message}\n\n—\n${name}\n${email}`);
+    const body = encodeURIComponent(`${message}\n\n${name}\n${email}`);
     window.location.href = `mailto:katrinagcoaching@gmail.com?subject=${subject}&body=${body}`;
   }
 
@@ -29,7 +29,7 @@ export default function ContactForm() {
         <textarea id="c-message" name="Message" required style={{ minHeight: "140px" }} />
       </div>
       <button type="submit" className="cta">Send message <span className="arrow">→</span></button>
-      <div className="submit-note">Opens your email with everything filled in — just hit send. I read every one myself.</div>
+      <div className="submit-note">Opens your email with everything filled in. Just hit send. I read every one myself.</div>
     </form>
   );
 }

@@ -6,9 +6,9 @@ import ContactForm from "@/components/ContactForm";
 import { MailIcon, PinIcon, ClockIcon } from "@/components/ContactIcons";
 
 export const metadata: Metadata = {
-  title: "Contact — Trine",
+  title: "Contact · Trine",
   description:
-    "Get in touch with Katrina Gall at Trine. No pitch, no pressure — just an honest conversation about where you're at.",
+    "Get in touch with Katrina Gall at Trine. No pitch, no pressure. Just an honest conversation about where you're at.",
 };
 
 export default function ContactPage() {
@@ -28,7 +28,7 @@ export default function ContactPage() {
           <div className="wrap">
             <div className="eyebrow">Get in touch</div>
             <h1>Let&apos;s have an honest conversation.</h1>
-            <p>No pitch, no pressure — just a real conversation about where you&apos;re at and whether this is a fit.</p>
+            <p>No pitch, no pressure. Just a real conversation about where you&apos;re at and whether this is a fit.</p>
           </div>
         </div>
       </section>
@@ -62,7 +62,7 @@ export default function ContactPage() {
               </div>
               <div className="info-card-cta">
                 <h3>Prefer to talk first?</h3>
-                <p>Book a free 15-minute chat — no pitch, no obligation.</p>
+                <p>Book a free 15-minute chat, no pitch, no obligation.</p>
                 <a href="#" className="cta on-dark">Book a chat <span className="arrow">→</span></a>
               </div>
             </div>

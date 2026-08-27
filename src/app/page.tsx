@@ -20,20 +20,20 @@ export default function Home() {
             <div className="eyebrow">For the successful and quietly exhausted</div>
             <h1>
               You built the life.
-              <br />
-              So why does it feel
-              <br />
-              <em>like someone else&apos;s?</em>
+              {/* <br /> */}
+              So why does it feel like
+              {/* <br /> */}
+              <em> someone else&apos;s?</em>
             </h1>
             <p className="sub">
-              If you&apos;ve built a career or business you&apos;re proud of — and you&apos;re still
-              exhausted, still questioning things, still waiting to feel like yourself again — this is
-              for people exactly like you.
+              You&apos;ve built a career or business you&apos;re proud of. You&apos;re still exhausted,
+              still questioning things, still waiting to feel like yourself again. This is for people
+              exactly like you.
             </p>
             <Link href="/#book" className="cta">
               Book a chat <span className="arrow">→</span>
             </Link>
-            <div className="hero-note">Free, 15 minutes. No pitch, no pressure — just a conversation.</div>
+            <div className="hero-note">Free, 15 minutes. No pitch, no pressure. Just a conversation.</div>
           </div>
           <div className="photo-block reveal">
             <Image
@@ -52,9 +52,9 @@ export default function Home() {
       <section className="qualify">
         <div className="wrap">
           <div className="qualify-box">
-            <h3>This is for you if —</h3>
+            <h3>This is for you if:</h3>
             <ul>
-              <li>You&apos;ve built something real — a career, a business, a life that looks good on paper.</li>
+              <li>You&apos;ve built something real: a career, a business, a life that looks good on paper.</li>
               <li>You&apos;re still tired in a way that success didn&apos;t fix.</li>
               <li>You&apos;re starting to ask bigger questions about what&apos;s next, even if you can&apos;t fully name them yet.</li>
               <li>You&apos;re ready for an honest conversation, not a sales pitch.</li>
@@ -108,14 +108,14 @@ export default function Home() {
           </div>
           <p className="pillars-intro reveal">
             We are what we think, and what we eat. Change one, and the other tends to follow. That&apos;s
-            why we don&apos;t put you in a box and work on one piece of you at a time — your body, your
+            why we don&apos;t put you in a box and work on one piece of you at a time. Your body, your
             mind and what actually matters to you are too tangled up to separate.
           </p>
           <div className="pillar-grid reveal">
             <div className="pillar">
               <div className="icon"><BodyIcon /></div>
               <h3>Body</h3>
-              <p>Health, movement, energy, and the habits that support who you&apos;re becoming. Nutrition lives here too — as one tool, not the whole toolkit.</p>
+              <p>Health, movement, energy, and the habits that support who you&apos;re becoming. Nutrition lives here too, as one tool, not the whole toolkit.</p>
             </div>
             <div className="pillar">
               <div className="icon"><MindIcon /></div>
@@ -185,9 +185,9 @@ export default function Home() {
           <ul className="reveal">
             <li>Waking up in a body that finally feels like <b>home</b> again.</li>
             <li>Knowing exactly who you are, underneath the job title.</li>
-            <li>Trusting yourself again — without needing a plan for everything.</li>
+            <li>Trusting yourself again, without needing a plan for everything.</li>
             <li>Being done with relationships that stay on the surface.</li>
-            <li>Feeling <b>unstoppable</b> — not just fine.</li>
+            <li>Feeling <b>unstoppable</b>, not just fine.</li>
           </ul>
         </div>
       </section>
@@ -202,7 +202,7 @@ export default function Home() {
               <p>
                 Before we change your whole life, let&apos;s look at what&apos;s feeding it. A practical
                 first step for anyone who wants their home environment to support who they&apos;re
-                becoming. Not another complicated diet — just clarity.
+                becoming. Not another complicated diet. Just clarity.
               </p>
             </div>
             <div className="soon-tag">Coming soon</div>
@@ -218,7 +218,7 @@ export default function Home() {
               <div className="eyebrow">The 30-day challenge</div>
               <h2>One habit. Thirty days. Proof that you can actually keep a promise to yourself.</h2>
               <p>
-                The smallest real step on the ladder — pick one habit and commit to it for thirty days,
+                The smallest real step on the ladder: pick one habit and commit to it for thirty days,
                 with a weekly coaching call to keep you honest and moving. Not a detox. Not a diet. A
                 trial run for doing this differently.
               </p>
@@ -239,7 +239,7 @@ export default function Home() {
               <h2>Eight weeks of the questions that actually change how you see yourself.</h2>
               <p>
                 Not habit stacking. Not a nutrition plan. Not another challenge. This is small-group
-                identity work — moving from where am I to what is my why, alongside a handful of people
+                identity work, moving from where am I to what is my why, alongside a handful of people
                 doing the same deep work at the same time.
               </p>
               <div className="offer-detail">$897 &nbsp;·&nbsp; SMALL GROUP &nbsp;·&nbsp; APPLICATIONS OPEN QUARTERLY</div>
@@ -260,12 +260,12 @@ export default function Home() {
               <p>
                 Reclaim Her is for women who are done coasting through their own life on other
                 people&apos;s terms. Identity. Health. Relationships. Purpose. Energy. Beliefs. And the
-                question underneath all of it — who am I now, and who do I want to become?
+                question underneath all of it: who am I now, and who do I want to become?
               </p>
               <div className="offer-detail">$5,997 &nbsp;·&nbsp; 1:1 &nbsp;·&nbsp; 6 MONTHS &nbsp;·&nbsp; WOMEN ONLY</div>
               <p style={{ fontStyle: "italic", fontSize: "15px", opacity: 0.75 }}>
                 Because a new life isn&apos;t something you buy off a lot. It&apos;s something you
-                build, slowly, on purpose — the same way you&apos;d build a good meal.
+                build, slowly, on purpose, the same way you&apos;d build a good meal.
               </p>
               <Link href="/reclaim-her" className="cta on-dark">Discover Reclaim Her <span className="arrow">→</span></Link>
             </div>
@@ -283,7 +283,7 @@ export default function Home() {
               <h2>One habit a month. Twelve months. A completely different person by the end of it.</h2>
               <p>
                 Promise Kept is a year-long commitment to yourself, built one habit at a time. Each
-                month you choose the one habit you&apos;re ready to keep — thirty days to actually build
+                month you choose the one habit you&apos;re ready to keep: thirty days to actually build
                 it, not just start it. Then the next month, the next one.
               </p>
               <p>You&apos;re not doing it alone: a weekly online session, weekly guidance, and a community of people doing the same work alongside you.</p>
@@ -312,7 +312,7 @@ export default function Home() {
             <h2 style={{ margin: "16px 0 16px" }}>I&apos;m not coaching from the outside looking in.</h2>
             <p>
               I&apos;ve built businesses, burned out doing it, and had to rebuild my own health and sense
-              of self while still running a life. I don&apos;t have a formula that fixes everyone — but
+              of self while still running a life. I don&apos;t have a formula that fixes everyone. But
               I&apos;ve been through my own version of this, and I know what it actually takes to come
               out the other side.
             </p>

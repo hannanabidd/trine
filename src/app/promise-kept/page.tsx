@@ -5,7 +5,7 @@ import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "Promise Kept — Trine",
+  title: "Promise Kept · Trine",
   description:
     "A year-long commitment to yourself, built one habit at a time. $98/month · 12-month commitment · opens December.",
 };
@@ -31,7 +31,7 @@ export default function PromiseKeptPage() {
             <h1>One habit a month. Twelve months. A completely different person by the end of it.</h1>
             <p>
               Promise Kept is a year-long commitment to yourself, built one habit at a time. Each
-              month you choose the one habit you&apos;re ready to keep — thirty days to actually
+              month you choose the one habit you&apos;re ready to keep: thirty days to actually
               build it, not just start it. Then the next month, the next one.
             </p>
             <div style={{ maxWidth: "460px" }}>
@@ -48,7 +48,7 @@ export default function PromiseKeptPage() {
             <h2 style={{ fontSize: "clamp(28px, 3.4vw, 40px)", marginTop: "16px" }}>The same promise, twelve times.</h2>
             <p style={{ fontSize: "16.5px", color: "var(--text-soft)", marginTop: "14px", lineHeight: 1.6 }}>
               You&apos;re not doing it alone: a weekly online session, weekly guidance, and a
-              community of people doing the same work alongside you — one month, one habit, one
+              community of people doing the same work alongside you, one month, one habit, one
               honest check-in at a time.
             </p>
           </div>
@@ -83,7 +83,7 @@ export default function PromiseKeptPage() {
             <div className="flow-step">
               <div className="num-badge">3</div>
               <h3>Check in</h3>
-              <p>A weekly call with the group — because willpower runs out, community doesn&apos;t.</p>
+              <p>A weekly call with the group, because willpower runs out, community doesn&apos;t.</p>
             </div>
           </div>
         </div>
@@ -120,7 +120,7 @@ export default function PromiseKeptPage() {
         <div className="wrap">
           <div className="eyebrow center">Opens December</div>
           <h2>Twelve months from now, this could just be who you are.</h2>
-          <p className="sub2">New members welcome every month after launch — but the waitlist gets first access.</p>
+          <p className="sub2">New members welcome every month after launch. But the waitlist gets first access.</p>
           <div style={{ maxWidth: "460px", margin: "0 auto" }}>
             <WaitlistForm tag="Promise Kept" buttonLabel="Join the waitlist" />
           </div>

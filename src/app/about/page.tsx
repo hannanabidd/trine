@@ -5,7 +5,7 @@ import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "About Trine — Katrina Gall",
+  title: "About Trine · Katrina Gall",
   description:
     "Built from lived experience, not a textbook. How burnout, a cancer diagnosis, and walking away from a life she'd spent years building led Katrina Gall to start Trine.",
 };
@@ -20,7 +20,7 @@ export default function AboutPage() {
           <div className="eyebrow">About Trine</div>
           <h1>Built from lived experience. Not a textbook.</h1>
           <p>
-            People often ask how I became a coach. Honestly, I don&apos;t think I chose it — I think it
+            People often ask how I became a coach. Honestly, I don&apos;t think I chose it. I think it
             found me.
           </p>
           <p>
@@ -58,7 +58,7 @@ export default function AboutPage() {
           <p>
             I spent years believing that if I worked hard enough, achieved enough, and kept everyone else
             happy, I&apos;d eventually land somewhere life felt easier. But there&apos;s always another
-            goal when achievement is the measure — another business, another responsibility, another
+            goal when achievement is the measure: another business, another responsibility, another
             person who needs you.
           </p>
           <p>
@@ -66,14 +66,14 @@ export default function AboutPage() {
             life that used to fit stopped fitting.
           </p>
           <p>
-            That was the start of rebuilding — nutrition, health, habits, nervous system regulation,
+            That was the start of rebuilding: nutrition, health, habits, nervous system regulation,
             breathwork, identity work, more reading and unlearning than I can list here. But the real
             shift wasn&apos;t anything I learned. It was realising I didn&apos;t need fixing. I needed to
             stop abandoning myself, start trusting myself, and actually decide what mattered now.
           </p>
           <p>
             I got calmer. Steadier. More direct. I don&apos;t coach from a pedestal, because I&apos;ve
-            stood exactly where you&apos;re standing — not knowing where the road goes, just knowing I
+            stood exactly where you&apos;re standing, not knowing where the road goes, just knowing I
             couldn&apos;t keep walking the old one.
           </p>
         </div>
@@ -121,7 +121,7 @@ export default function AboutPage() {
           </div>
           <div>
             <h2>I climbed Kilimanjaro and missed the summit by 350 metres.</h2>
-            <p>I was gutted for a while — then realised the summit was never really the point. It was who I became on the way up.</p>
+            <p>I was gutted for a while. Then realised the summit was never really the point. It was who I became on the way up.</p>
             <p>
               I&apos;ve cycled Brisbane to Sydney for Tour de Cure. Trekked through Nepal. Built businesses,
               led teams, started again more than once. Every one of those taught me the same thing: the
@@ -138,7 +138,7 @@ export default function AboutPage() {
           <p>
             I&apos;m calmer than I was. More intentional, more present, less reactive. I trust myself more
             than I used to, and I protect my energy instead of handing it out to whoever asks first. I
-            still do the work — transformation isn&apos;t something you finish once, it&apos;s something
+            still do the work. Transformation isn&apos;t something you finish once, it&apos;s something
             you keep living.
           </p>
           <p>
@@ -160,7 +160,7 @@ export default function AboutPage() {
             <p>
               Every engagement starts with a real conversation about where you&apos;re at, what
               you&apos;re carrying, and what you actually want. From there we figure out the right fit
-              together — nothing here is generic.
+              together. Nothing here is generic.
             </p>
           </div>
           <div className="faq-item">
@@ -168,7 +168,7 @@ export default function AboutPage() {
             <p>
               I don&apos;t treat you like one problem to solve. Your body, your habits, your identity and
               your relationships are tangled together, so the work looks at all of it rather than picking
-              one thing to fix in isolation. And I&apos;m not coaching from theory — I&apos;ve done my own
+              one thing to fix in isolation. And I&apos;m not coaching from theory. I&apos;ve done my own
               version of this rebuild.
             </p>
           </div>
@@ -188,7 +188,7 @@ export default function AboutPage() {
           <div className="faq-item">
             <h3>How do I get started?</h3>
             <p>
-              Book a chat. No pressure, no pitch — just an honest conversation about where you&apos;re at
+              Book a chat. No pressure, no pitch. Just an honest conversation about where you&apos;re at
               and whether I can actually help. If it&apos;s a fit, I&apos;ll tell you what&apos;s next. If
               it&apos;s not, I&apos;ll tell you that too.
             </p>

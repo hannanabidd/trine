@@ -16,7 +16,7 @@ export default function SiteFooter() {
             </Link>
             <p>
               Built from lived experience, not theory. Trine has walked the path from burnout to
-              complete rebuild — and now guides other people through the same transformation.
+              complete rebuild, and now guides other people through the same transformation.
             </p>
           </div>
           <div>

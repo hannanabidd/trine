@@ -2,30 +2,18 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 const PROGRAMS = [
-  { href: "/kitchen-reset", name: "Kitchen Reset", tag: "Free · Coming soon" },
-  { href: "/30-day-challenge", name: "30-Day Challenge", tag: "$59 · One habit" },
-  { href: "/8-week-program", name: "8-Week Program", tag: "$897 · Small group" },
-  { href: "/reclaim-her", name: "Reclaim Her", tag: "$5,997 · Women only" },
-  { href: "/promise-kept", name: "Promise Kept", tag: "$98 / mo · 12 months" },
+  { href: "/kitchen-reset", name: "Kitchen Reset" },
+  { href: "/30-day-challenge", name: "30-Day Challenge" },
+  { href: "/8-week-program", name: "8-Week Program" },
+  { href: "/reclaim-her", name: "Reclaim Her" },
+  { href: "/promise-kept", name: "Promise Kept" },
 ];
 
 export default function SiteNav() {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    function onClickOutside(e: MouseEvent) {
-      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
-        setDropdownOpen(false);
-      }
-    }
-    document.addEventListener("mousedown", onClickOutside);
-    return () => document.removeEventListener("mousedown", onClickOutside);
-  }, []);
 
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? "hidden" : "";
@@ -40,44 +28,14 @@ export default function SiteNav() {
         <div className="nav-pill">
           <Link href="/" className="brand-lockup">
             <Image src="/images/Logo.svg" alt="Trine" width={38} height={38} className="nav-badge-img" unoptimized />
-            {/* <span className="brand">
-              <span className="word">Trine</span>
-              <span className="sub">Katrina Gall</span>
-            </span> */}
           </Link>
 
           <div className="navlinks">
             <Link href="/">Home</Link>
+            {PROGRAMS.map((p) => (
+              <Link key={p.href} href={p.href}>{p.name}</Link>
+            ))}
             <Link href="/about">About</Link>
-            <div
-              className={`nav-item-dropdown${dropdownOpen ? " open" : ""}`}
-              ref={dropdownRef}
-              onMouseEnter={() => setDropdownOpen(true)}
-              onMouseLeave={() => setDropdownOpen(false)}
-            >
-              <button
-                type="button"
-                className="nav-dropdown-trigger"
-                onClick={() => setDropdownOpen((v) => !v)}
-                aria-expanded={dropdownOpen}
-              >
-                PROGRAMS
-                <svg width="10" height="6" viewBox="0 0 10 6" fill="none" className="chev">
-                  <path d="M1 1l4 4 4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </button>
-              <div className="nav-dropdown-panel">
-                <div className="nav-dropdown-panel-inner">
-                  {PROGRAMS.map((p) => (
-                    <Link key={p.href} href={p.href} className="nav-dropdown-item" onClick={() => setDropdownOpen(false)}>
-                      <span className="dot" />
-                      <span className="name">{p.name}</span>
-                      <span className="tag">{p.tag}</span>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </div>
             <Link href="/contact">Contact</Link>
           </div>
 

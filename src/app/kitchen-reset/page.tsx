@@ -6,7 +6,7 @@ import JourneyPosition from "@/components/JourneyPosition";
 import WaitlistForm from "@/components/WaitlistForm";
 
 export const metadata: Metadata = {
-  title: "Kitchen Reset — Trine",
+  title: "Kitchen Reset · Trine",
   description:
     "A free, practical first step for anyone who wants their home environment to support who they're becoming. Coming soon from Trine.",
 };
@@ -23,7 +23,7 @@ export default function KitchenResetPage() {
           <p className="sub">
             Before we change your whole life, let&apos;s look at what&apos;s feeding it. A free,
             practical first step for anyone who wants their home environment to support who
-            they&apos;re becoming — not another complicated diet, just clarity.
+            they&apos;re becoming, not another complicated diet, just clarity.
           </p>
           <WaitlistForm tag="Kitchen Reset" buttonLabel="Notify me" />
           <div className="hero-note" style={{ marginTop: "18px" }}>No spam. One email, the day it opens.</div>
@@ -38,14 +38,14 @@ export default function KitchenResetPage() {
         <div className="wrap-narrow">
           <h2>This isn&apos;t a diet. It&apos;s a reset.</h2>
           <p>
-            Most people don&apos;t need another meal plan — they need their kitchen, their pantry,
+            Most people don&apos;t need another meal plan. They need their kitchen, their pantry,
             and their daily rhythm to stop working against them. Kitchen Reset is the smallest
             possible starting point: a short, guided look at what&apos;s actually in your space and
             your routine, and what to shift first.
           </p>
           <p>
             No tracking. No 6am alarms. No throwing out everything you own. Just enough clarity to
-            take one honest step — before you decide whether you want to take the next one.
+            take one honest step, before you decide whether you want to take the next one.
           </p>
         </div>
       </section>
@@ -55,9 +55,9 @@ export default function KitchenResetPage() {
           <div className="qualify-box">
             <h3>What to expect</h3>
             <ul>
-              <li>No overwhelm — this is designed to take an afternoon, not a month.</li>
+              <li>No overwhelm: this is designed to take an afternoon, not a month.</li>
               <li>No complicated grocery list or ingredients you&apos;ll never use again.</li>
-              <li>A clear, honest place to start — and a next step if you want one.</li>
+              <li>A clear, honest place to start, and a next step if you want one.</li>
             </ul>
           </div>
         </div>
@@ -66,7 +66,7 @@ export default function KitchenResetPage() {
       <section className="story">
         <div className="wrap-narrow">
           <div className="callout">
-            Your kitchen is the one room in your house that touches everything else — your energy,
+            Your kitchen is the one room in your house that touches everything else: your energy,
             your habits, your relationship with your own body. Fix what&apos;s feeding you, and
             everything downstream gets a little easier.
             <span className="who">Katrina Gall, Trine</span>

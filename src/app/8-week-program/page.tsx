@@ -4,7 +4,7 @@ import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "The 8-Week Program — Trine",
+  title: "The 8-Week Program · Trine",
   description:
     "Eight weeks of small-group identity work, application-based, $897. Moving from where am I to what is my why, alongside a handful of people doing the same deep work.",
 };
@@ -34,11 +34,11 @@ export default function EightWeekPage() {
             </h1>
             <p style={{ fontSize: "17.5px", color: "var(--text-soft)", lineHeight: 1.65, maxWidth: "540px", margin: "0 0 18px" }}>
               Not habit stacking. Not a nutrition plan. Not another challenge. This is small-group
-              identity work — moving from where am I to what is my why, alongside a handful of
+              identity work, moving from where am I to what is my why, alongside a handful of
               people doing the same deep work at the same time.
             </p>
             <p style={{ fontSize: "17.5px", color: "var(--text-soft)", lineHeight: 1.65, maxWidth: "540px", margin: 0 }}>
-              Eight weeks. Eight honest questions. No theory — just the work.
+              Eight weeks. Eight honest questions. No theory. Just the work.
             </p>
           </div>
 
@@ -57,12 +57,12 @@ export default function EightWeekPage() {
       <section className="qualify">
         <div className="wrap">
           <div className="qualify-box">
-            <h3>This is for you if —</h3>
+            <h3>This is for you if:</h3>
             <ul>
               <li>You&apos;ve achieved a lot and are quietly questioning what&apos;s next.</li>
               <li>You&apos;re done with surface-level fixes and ready to look at the bigger picture.</li>
               <li>You want a small group, not a course you&apos;ll watch alone and never finish.</li>
-              <li>You&apos;re ready to actually apply — this isn&apos;t a checkout page.</li>
+              <li>You&apos;re ready to actually apply. This isn&apos;t a checkout page.</li>
             </ul>
           </div>
         </div>
@@ -106,15 +106,15 @@ export default function EightWeekPage() {
 
           <div className="faq-item">
             <h3>What if I&apos;m not sure this is the exact right fit?</h3>
-            <p>That&apos;s exactly what the application is for. It&apos;s a short, honest conversation on paper before we ever get on a call — if it&apos;s not quite right, I&apos;ll tell you, and point you somewhere that is.</p>
+            <p>That&apos;s exactly what the application is for. It&apos;s a short, honest conversation on paper before we ever get on a call. If it&apos;s not quite right, I&apos;ll tell you, and point you somewhere that is.</p>
           </div>
           <div className="faq-item">
             <h3>Is $897 payable over time?</h3>
-            <p>Yes. If a payment plan makes this easier to say yes to, just say so in your application — it won&apos;t change your spot in the group.</p>
+            <p>Yes. If a payment plan makes this easier to say yes to, just say so in your application. It won&apos;t change your spot in the group.</p>
           </div>
           <div className="faq-item">
             <h3>What if I can&apos;t make every single weekly call?</h3>
-            <p>Life happens. What matters is that you&apos;re mostly there and fully present when you are — small groups only work when people actually show up.</p>
+            <p>Life happens. What matters is that you&apos;re mostly there and fully present when you are. Small groups only work when people actually show up.</p>
           </div>
           <div className="faq-item">
             <h3>When does the next cohort start?</h3>
@@ -127,7 +127,7 @@ export default function EightWeekPage() {
         <div className="wrap">
           <div className="eyebrow center">Ready when you are</div>
           <h2>Eight weeks from now, you&apos;ll know a lot more about who you actually are.</h2>
-          <p className="sub2">Applications are read personally — no forms disappearing into a void.</p>
+          <p className="sub2">Applications are read personally. No forms disappearing into a void.</p>
           <Link href="/apply" className="cta on-dark">Apply for the next cohort <span className="arrow">→</span></Link>
           <div className="recipe-line">Life is a recipe. <b>What are you creating?</b></div>
         </div>

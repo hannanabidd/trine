@@ -13,7 +13,7 @@ export default function ApplyForm() {
       if (key === "Name" || key === "Email") continue;
       body += `${key}:\n${value || "(no answer)"}\n\n`;
     }
-    const subject = encodeURIComponent(`8-Week Program Application — ${name}`);
+    const subject = encodeURIComponent(`8-Week Program Application · ${name}`);
     const mailBody = encodeURIComponent(body);
     window.location.href = `mailto:katrinagcoaching@gmail.com?subject=${subject}&body=${mailBody}`;
   }
@@ -81,7 +81,7 @@ export default function ApplyForm() {
           <div className="fsection-label">03 · Is this actually the right fit</div>
           <div className="field">
             <label>
-              This isn&apos;t a nutrition or habit program — it&apos;s eight weeks of honest questions
+              This isn&apos;t a nutrition or habit program. It&apos;s eight weeks of honest questions
               about who you are underneath your roles. Does that sound like what you&apos;re looking for?
             </label>
             <div className="radiorow">
@@ -93,7 +93,7 @@ export default function ApplyForm() {
             <label htmlFor="q5">
               Small groups only work when everyone shows up fully. Is there anything going on right now
               that would make it hard to be fully present for the next 8 weeks?
-              <span className="hint">Totally fine if the answer is no — just want to know.</span>
+              <span className="hint">Totally fine if the answer is no, just want to know.</span>
             </label>
             <textarea id="q5" name="Anything that would make it hard to be fully present" />
           </div>
@@ -124,7 +124,7 @@ export default function ApplyForm() {
 
         <div className="submit-row">
           <button type="submit" className="cta">Send my application <span className="arrow">→</span></button>
-          <div className="submit-note">Opens your email with everything filled in — just hit send. I read every one myself.</div>
+          <div className="submit-note">Opens your email with everything filled in. Just hit send. I read every one myself.</div>
         </div>
       </div>
     </form>

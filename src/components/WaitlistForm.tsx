@@ -9,14 +9,14 @@ export default function WaitlistForm({ tag, buttonLabel }: { tag: string; button
     e.preventDefault();
     const data = new FormData(e.currentTarget);
     const email = (data.get("email") as string) || "";
-    const subject = encodeURIComponent(`${tag} — notify me`);
+    const subject = encodeURIComponent(`${tag} · notify me`);
     const body = encodeURIComponent(`Please add this email to the ${tag} list:\n${email}`);
     window.location.href = `mailto:katrinagcoaching@gmail.com?subject=${subject}&body=${body}`;
     setSent(true);
   }
 
   if (sent) {
-    return <p className="progress-caption">Opening your email now — just hit send and you&apos;re on the list.</p>;
+    return <p className="progress-caption">Opening your email now. Just hit send and you&apos;re on the list.</p>;
   }
 
   return (

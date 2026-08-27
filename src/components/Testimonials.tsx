@@ -24,7 +24,7 @@ export default function Testimonials({ eyebrow, heading }: TestimonialsProps) {
           <div className="tcard">
             <div className="stars">★★★★★</div>
             <p>
-              &quot;The small group made a huge difference — welcoming, supportive, never overwhelming.
+              &quot;The small group made a huge difference, welcoming, supportive, never overwhelming.
               I walked away not only with valuable knowledge but feeling motivated and genuinely
               supported.&quot;
             </p>
