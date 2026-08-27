@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const PROGRAMS = [
@@ -14,6 +15,7 @@ const PROGRAMS = [
 
 export default function SiteNav() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? "hidden" : "";
@@ -31,12 +33,12 @@ export default function SiteNav() {
           </Link>
 
           <div className="navlinks">
-            <Link href="/">Home</Link>
-            <Link href="/about">About</Link>
+            <Link href="/" className={pathname === "/" ? "active" : undefined}>Home</Link>
+            <Link href="/about" className={pathname === "/about" ? "active" : undefined}>About</Link>
             {PROGRAMS.map((p) => (
-              <Link key={p.href} href={p.href}>{p.name}</Link>
+              <Link key={p.href} href={p.href} className={pathname === p.href ? "active" : undefined}>{p.name}</Link>
             ))}
-            <Link href="/contact">Contact</Link>
+            <Link href="/contact" className={pathname === "/contact" ? "active" : undefined}>Contact</Link>
           </div>
 
           <div className="nav-right">
@@ -60,16 +62,16 @@ export default function SiteNav() {
         <button type="button" className="mobile-close" aria-label="Close menu" onClick={() => setMobileOpen(false)}>
           ✕
         </button>
-        <Link href="/" className="m-link" onClick={() => setMobileOpen(false)}>Home</Link>
+        <Link href="/" className={`m-link${pathname === "/" ? " active" : ""}`} onClick={() => setMobileOpen(false)}>Home</Link>
         <div className="m-sub-label">Programs</div>
         {PROGRAMS.map((p) => (
-          <Link key={p.href} href={p.href} className="m-link m-link-sm" onClick={() => setMobileOpen(false)}>
+          <Link key={p.href} href={p.href} className={`m-link m-link-sm${pathname === p.href ? " active" : ""}`} onClick={() => setMobileOpen(false)}>
             {p.name}
           </Link>
         ))}
         <div className="m-sub-label">Trine</div>
-        <Link href="/about" className="m-link m-link-sm" onClick={() => setMobileOpen(false)}>About Trine</Link>
-        <Link href="/contact" className="m-link m-link-sm" onClick={() => setMobileOpen(false)}>Contact</Link>
+        <Link href="/about" className={`m-link m-link-sm${pathname === "/about" ? " active" : ""}`} onClick={() => setMobileOpen(false)}>About Trine</Link>
+        <Link href="/contact" className={`m-link m-link-sm${pathname === "/contact" ? " active" : ""}`} onClick={() => setMobileOpen(false)}>Contact</Link>
         <Link href="/#book" className="cta on-dark m-cta" onClick={() => setMobileOpen(false)}>
           Book a chat <span className="arrow">→</span>
         </Link>

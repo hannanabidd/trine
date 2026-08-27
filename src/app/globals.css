@@ -12,8 +12,8 @@
   --sage-950: #131d18;
   --ink: #101915;
   --text-soft: #687276;
-  --gold: #ffa800;
-  --gold-deep: #c97f00;
+  --gold: #C9A84C;
+  --gold-deep: #C9A84C;
   --line: rgba(16, 25, 21, 0.12);
 
   --font-serif: var(--font-display), sans-serif;
@@ -76,9 +76,8 @@ h3 {
 }
 .eyebrow::before {
   content: "";
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
+  width: 18px;
+  height: 1.5px;
   background: var(--gold);
   display: inline-block;
   flex-shrink: 0;
@@ -252,12 +251,27 @@ nav.site-nav {
   white-space: nowrap;
 }
 .navlinks a {
+  position: relative;
   text-decoration: none;
   opacity: 0.72;
-  transition: opacity 0.15s ease;
+  transition: opacity 0.15s ease, color 0.15s ease;
+  /* padding-bottom: 4px; */
 }
 .navlinks a:hover {
   opacity: 1;
+}
+.navlinks a.active {
+  opacity: 1;
+  color: var(--sage-700);
+}
+.navlinks a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -8px;
+  height: 1.5px;
+  background: var(--gold);
 }
 .nav-right {
   display: flex;
@@ -324,6 +338,9 @@ nav.site-nav {
   color: var(--mist);
   text-decoration: none;
   padding: 10px 0;
+}
+.mobile-overlay .m-link.active {
+  color: var(--gold);
 }
 .mobile-overlay .m-link-sm {
   font-size: 22px;
