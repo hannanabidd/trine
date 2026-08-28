@@ -123,7 +123,7 @@ h3 {
   color: var(--sage-950);
 }
 .cta.on-dark:hover {
-  background: #ffb733;
+  background: #b3903e;
 }
 .cta.ghost {
   background: transparent;
@@ -646,11 +646,11 @@ nav.site-nav {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: var(--sage-100);
+  background: rgba(201, 168, 76, 0.14);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--sage-700);
+  color: var(--gold-deep);
   margin-bottom: 18px;
 }
 .pillar h3 {
@@ -702,8 +702,8 @@ nav.site-nav {
   width: 34px;
   height: 34px;
   border-radius: 50%;
-  background: var(--sage-600);
-  color: var(--white);
+  background: var(--gold);
+  color: var(--sage-950);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -799,8 +799,8 @@ nav.site-nav {
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--sage-700);
-  border: 1.5px solid var(--sage-600);
+  color: var(--gold-deep);
+  border: 1.5px solid var(--gold);
   border-radius: 100px;
   padding: 10px 20px;
   white-space: nowrap;
@@ -1324,7 +1324,7 @@ form {
 .field textarea:focus,
 .field select:focus {
   outline: none;
-  border-color: var(--sage-600);
+  border-color: var(--gold-deep);
 }
 .radiorow {
   display: flex;
@@ -1559,6 +1559,7 @@ form {
 }
 .faq-item.open .faq-chev {
   transform: rotate(180deg);
+  color: var(--gold-deep);
 }
 .faq-answer-wrap {
   display: grid;
@@ -1611,7 +1612,7 @@ form {
 /* ================= CALLOUT (reusable pull-quote) ================= */
 .callout {
   background: var(--sage-100);
-  border-left: 3px solid var(--sage-600);
+  border-left: 3px solid var(--gold);
   border-radius: 4px 16px 16px 4px;
   padding: 28px 32px;
   font-family: var(--font-serif);
@@ -1652,7 +1653,7 @@ form {
 }
 .inline-form input:focus {
   outline: none;
-  border-color: var(--sage-600);
+  border-color: var(--gold-deep);
 }
 .inline-form button {
   flex-shrink: 0;
@@ -1664,7 +1665,7 @@ form {
 }
 .final .inline-form .cta:hover,
 .pk-hero-content .inline-form .cta:hover {
-  background: #ffb733;
+  background: #b3903e;
 }
 
 /* ================= JOURNEY POSITION STRIP ================= */
@@ -1824,8 +1825,8 @@ form {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: var(--sage-600);
-  color: var(--white);
+  background: var(--gold);
+  color: var(--sage-950);
   display: flex;
   align-items: center;
   justify-content: center;
