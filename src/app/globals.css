@@ -14,10 +14,12 @@
   --text-soft: #687276;
   --gold: #C9A84C;
   --gold-deep: #C9A84C;
+  --danger: #B3452F;
   --line: rgba(16, 25, 21, 0.12);
 
   --font-serif: var(--font-display), sans-serif;
   --font-body: var(--font-sans), sans-serif;
+  --font-accent: var(--font-accent-raw), serif;
 }
 
 * {
@@ -874,18 +876,15 @@ nav.site-nav {
   border-radius: 18px;
   position: relative;
   overflow: hidden;
+  background: var(--sage-100);
 }
-.offer-side.grad-gold {
-  background: radial-gradient(120% 120% at 25% 20%, rgba(255, 168, 0, 0.5), transparent 60%),
-    linear-gradient(160deg, #3c5a4a, #1a2720);
-}
-.offer-side.grad-sage {
-  background: radial-gradient(120% 120% at 70% 25%, rgba(142, 178, 162, 0.55), transparent 60%),
-    linear-gradient(160deg, #1a2720, #101915);
-}
-.offer-side.grad-mint {
-  background: radial-gradient(120% 120% at 30% 75%, rgba(194, 220, 208, 0.9), transparent 60%),
-    linear-gradient(160deg, #daeee5, #c2dcd0);
+.offer-side::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16), inset 0 -70px 80px -30px rgba(16, 25, 21, 0.4);
+  pointer-events: none;
 }
 
 /* ================= ABOUT (trimmed) ================= */
@@ -1757,11 +1756,13 @@ form {
 }
 .numeral-hero .bignum {
   position: absolute;
-  top: -60px;
+  top: -100px;
   right: -20px;
-  font-family: var(--font-serif);
-  font-size: min(56vw, 460px);
-  color: var(--sage-100);
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-weight: 400;
+  font-size: min(60vw, 500px);
+  color: var(--sage-200);
   line-height: 1;
   z-index: 0;
   user-select: none;

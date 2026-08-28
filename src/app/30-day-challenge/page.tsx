@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import WaitlistForm from "@/components/WaitlistForm";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
@@ -91,7 +92,15 @@ export default function ThirtyDayPage() {
               <p>One habit, chosen by you. A weekly group coaching call to keep you accountable. Thirty days to prove it&apos;s possible, then decide what&apos;s next.</p>
               <div className="offer-detail">$59 &nbsp;·&nbsp; ONE HABIT &nbsp;·&nbsp; WEEKLY COACHING CALL &nbsp;·&nbsp; NO LOCK-IN</div>
             </div>
-            <div className="offer-side grad-mint"></div>
+            <div className="offer-side">
+              <Image
+                src="/images/30-day.JPG"
+                alt="Morning light over a bowl of fruit, a small still life of a slower routine"
+                fill
+                sizes="(max-width: 960px) 100vw, 30vw"
+                style={{ objectFit: "cover" }}
+              />
+            </div>
           </div>
         </div>
       </section>
