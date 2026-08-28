@@ -226,7 +226,15 @@ export default function Home() {
               <div className="offer-detail">$59 &nbsp;·&nbsp; ONE HABIT &nbsp;·&nbsp; WEEKLY COACHING CALL</div>
               <Link href="/30-day-challenge" className="cta">Start the challenge <span className="arrow">→</span></Link>
             </div>
-            <div className="offer-side grad-mint"></div>
+            <div className="offer-side">
+              <Image
+                src="/images/30-day.JPG"
+                alt="Morning light over a bowl of fruit, a small still life of a slower routine"
+                fill
+                sizes="(max-width: 960px) 100vw, 30vw"
+                style={{ objectFit: "cover" }}
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -246,7 +254,15 @@ export default function Home() {
               <div className="offer-detail">$897 &nbsp;·&nbsp; SMALL GROUP &nbsp;·&nbsp; APPLICATIONS OPEN QUARTERLY</div>
               <Link href="/8-week-program" className="cta">Explore the 8-Week Program <span className="arrow">→</span></Link>
             </div>
-            <div className="offer-side grad-gold"></div>
+            <div className="offer-side">
+              <Image
+                src="/images/8-weeks.jpg"
+                alt="A small group of women laughing together"
+                fill
+                sizes="(max-width: 960px) 100vw, 30vw"
+                style={{ objectFit: "cover", objectPosition: "center 25%" }}
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -270,7 +286,15 @@ export default function Home() {
               </p>
               <Link href="/reclaim-her" className="cta on-dark">Discover Reclaim Her <span className="arrow">→</span></Link>
             </div>
-            <div className="offer-side grad-sage"></div>
+            <div className="offer-side">
+              <Image
+                src="/images/reclaim-her.jpg"
+                alt="A woman standing outdoors with her arms raised toward the light"
+                fill
+                sizes="(max-width: 960px) 100vw, 30vw"
+                style={{ objectFit: "cover", objectPosition: "center 20%" }}
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -291,7 +315,15 @@ export default function Home() {
               <div className="offer-detail">$98 / MONTH &nbsp;·&nbsp; 12-MONTH COMMITMENT &nbsp;·&nbsp; OPENS DECEMBER &nbsp;·&nbsp; NEW MEMBERS WELCOME EVERY MONTH AFTER</div>
               <Link href="/promise-kept" className="cta">Join the waitlist <span className="arrow">→</span></Link>
             </div>
-            <div className="offer-side grad-mint"></div>
+            <div className="offer-side">
+              <Image
+                src="/images/promise-kept.jpg"
+                alt="Hands cupped together in a circle of support"
+                fill
+                sizes="(max-width: 960px) 100vw, 30vw"
+                style={{ objectFit: "cover" }}
+              />
+            </div>
           </div>
         </div>
       </section>

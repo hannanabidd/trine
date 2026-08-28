@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Inter } from "next/font/google";
+import { Poppins, Inter, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -15,6 +15,13 @@ const inter = Inter({
   weight: ["400", "500", "600", "700"],
 });
 
+const instrumentSerif = Instrument_Serif({
+  variable: "--font-accent-raw",
+  subsets: ["latin"],
+  weight: ["400"],
+  style: ["normal", "italic"],
+});
+
 export const metadata: Metadata = {
   title: "Trine · Do Life Differently",
   description:
@@ -23,7 +30,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" data-scroll-behavior="smooth" className={`${poppins.variable} ${inter.variable}`}>
+    <html lang="en" data-scroll-behavior="smooth" className={`${poppins.variable} ${inter.variable} ${instrumentSerif.variable}`}>
       <body>{children}</body>
     </html>
   );

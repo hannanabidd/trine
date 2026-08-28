@@ -1,21 +1,54 @@
 "use client";
 
-import { FormEvent } from "react";
+import { FormEvent, useState } from "react";
+
+type Status = "idle" | "sending" | "sent" | "error";
 
 export default function ApplyForm() {
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  const [status, setStatus] = useState<Status>("idle");
+  const [errorMsg, setErrorMsg] = useState("");
+
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
     const name = (data.get("Name") as string) || "";
-    let body = "";
+    const email = (data.get("Email") as string) || "";
+    const rows: { label: string; value: string }[] = [];
     for (const [key, value] of data.entries()) {
       if (key === "Name" || key === "Email") continue;
-      body += `${key}:\n${value || "(no answer)"}\n\n`;
+      rows.push({ label: key, value: (value as string) || "(no answer)" });
     }
-    const subject = encodeURIComponent(`8-Week Program Application · ${name}`);
-    const mailBody = encodeURIComponent(body);
-    window.location.href = `mailto:katrinagcoaching@gmail.com?subject=${subject}&body=${mailBody}`;
+
+    setStatus("sending");
+    setErrorMsg("");
+    try {
+      const res = await fetch("/api/apply", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, rows }),
+      });
+      const result = await res.json();
+      if (!res.ok) throw new Error(result.error || "Something went wrong.");
+      setStatus("sent");
+      form.reset();
+    } catch (err) {
+      setStatus("error");
+      setErrorMsg(err instanceof Error ? err.message : "Something went wrong. Please try again.");
+    }
+  }
+
+  if (status === "sent") {
+    return (
+      <div className="wrap-narrow" style={{ padding: "40px 0 90px" }}>
+        <div className="fsection-label">Application sent</div>
+        <h2 style={{ fontSize: "clamp(26px, 3.4vw, 36px)", margin: "8px 0 14px" }}>Got it. Thank you.</h2>
+        <p style={{ fontSize: "17px", color: "var(--text-soft)", lineHeight: 1.65, maxWidth: "520px" }}>
+          Your application landed straight in my inbox, and I read every one myself. I&apos;ll be in
+          touch soon to let you know what&apos;s next.
+        </p>
+      </div>
+    );
   }
 
   return (
@@ -123,8 +156,12 @@ export default function ApplyForm() {
         </div>
 
         <div className="submit-row">
-          <button type="submit" className="cta">Send my application <span className="arrow">→</span></button>
-          <div className="submit-note">Opens your email with everything filled in. Just hit send. I read every one myself.</div>
+          <button type="submit" className="cta" disabled={status === "sending"}>
+            {status === "sending" ? "Sending..." : "Send my application"} <span className="arrow">→</span>
+          </button>
+          <div className="submit-note" style={status === "error" ? { color: "var(--danger)" } : undefined}>
+            {status === "error" ? errorMsg : "Sent straight to my inbox. I read every one myself."}
+          </div>
         </div>
       </div>
     </form>
