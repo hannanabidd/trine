@@ -33,6 +33,7 @@ export default function SiteFooter() {
             <h4>Quick links</h4>
             <ul>
               <li><Link href="/about">About Trine</Link></li>
+              <li><Link href="/blogs">Blogs</Link></li>
               <li><Link href="/contact">Contact</Link></li>
             </ul>
           </div>

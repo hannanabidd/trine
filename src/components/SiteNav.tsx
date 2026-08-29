@@ -38,6 +38,7 @@ export default function SiteNav() {
             {PROGRAMS.map((p) => (
               <Link key={p.href} href={p.href} className={pathname === p.href ? "active" : undefined}>{p.name}</Link>
             ))}
+            <Link href="/blogs" className={pathname.startsWith("/blogs") ? "active" : undefined}>Blogs</Link>
             <Link href="/contact" className={pathname === "/contact" ? "active" : undefined}>Contact</Link>
           </div>
 
@@ -70,7 +71,8 @@ export default function SiteNav() {
           </Link>
         ))}
         <div className="m-sub-label">Trine</div>
-        <Link href="/about" className={`m-link m-link-sm${pathname === "/about" ? " active" : ""}`} onClick={() => setMobileOpen(false)}>About Trine</Link>
+        <Link href="/about" className={`m-link m-link-sm${pathname === "/about" ? " active" : ""}`} onClick={() => setMobileOpen(false)}>About</Link>
+        <Link href="/blogs" className={`m-link${pathname.startsWith("/blogs") ? " active" : ""}`} onClick={() => setMobileOpen(false)}>Blogs</Link>
         <Link href="/contact" className={`m-link m-link-sm${pathname === "/contact" ? " active" : ""}`} onClick={() => setMobileOpen(false)}>Contact</Link>
         <Link href="/#book" className="cta on-dark m-cta" onClick={() => setMobileOpen(false)}>
           Book a chat <span className="arrow">→</span>
