@@ -5,9 +5,9 @@ import SiteFooter from "@/components/SiteFooter";
 import FaqItem from "@/components/FaqItem";
 
 export const metadata: Metadata = {
-  title: "The 8-Week Program · Trine",
+  title: "What If I Knew I Couldn't Fail · Trine",
   description:
-    "Eight weeks of small-group identity work, application-based, $897. Moving from where am I to what is my why, alongside a handful of people doing the same deep work.",
+    "Eight weeks of small-group identity work, application-based, $897. Eight weeks of the questions that actually change how you see yourself.",
 };
 
 const WEEKS = [
@@ -29,10 +29,13 @@ export default function EightWeekPage() {
       <section className="cohort-hero">
         <div className="wrap cohort-hero-grid">
           <div className="reveal">
-            <div className="eyebrow">The 8-week group program</div>
+            <div className="eyebrow">$897 · 8-week program</div>
             <h1 style={{ fontSize: "clamp(34px, 4.6vw, 54px)", margin: "18px 0 22px" }}>
-              Eight weeks of the questions that actually change how you see yourself.
+              What If I Knew I Couldn&apos;t Fail
             </h1>
+            <p style={{ fontSize: "17.5px", color: "var(--text-soft)", lineHeight: 1.65, maxWidth: "540px", margin: "0 0 18px" }}>
+              Eight weeks of the questions that actually change how you see yourself.
+            </p>
             <p style={{ fontSize: "17.5px", color: "var(--text-soft)", lineHeight: 1.65, maxWidth: "540px", margin: "0 0 18px" }}>
               Not habit stacking. Not a nutrition plan. Not another challenge. This is small-group
               identity work, moving from where am I to what is my why, alongside a handful of

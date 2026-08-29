@@ -18,7 +18,7 @@ export default function Home() {
         <Image src="/images/elements02.png" alt="" aria-hidden="true" width={1024} height={1536} className="hero-vine" />
         <div className="wrap hero-grid">
           <div className="reveal">
-            <div className="eyebrow">For the successful and quietly exhausted</div>
+            <div className="eyebrow">For the quietly exhausted</div>
             <h1>
               You built the life.
               {/* <br /> */}
@@ -216,15 +216,13 @@ export default function Home() {
         <div className="wrap">
           <div className="offer-card dc reveal">
             <div>
-              <div className="eyebrow">The 30-day challenge</div>
-              <h2>One habit. Thirty days. Proof that you can actually keep a promise to yourself.</h2>
+              <div className="eyebrow">$59 · 30-day challenge</div>
+              <h2>Stop Starting Monday</h2>
               <p>
-                The smallest real step on the ladder: pick one habit and commit to it for thirty days,
-                with a weekly coaching call to keep you honest and moving. Not a detox. Not a diet. A
-                trial run for doing this differently.
+                A 30-day challenge to finally change the habit you&apos;ve been trying to change.
               </p>
               <div className="offer-detail">$59 &nbsp;·&nbsp; ONE HABIT &nbsp;·&nbsp; WEEKLY COACHING CALL</div>
-              <Link href="/30-day-challenge" className="cta">Start the challenge <span className="arrow">→</span></Link>
+              <Link href="/stop-starting-monday" className="cta">Start today <span className="arrow">→</span></Link>
             </div>
             <div className="offer-side">
               <Image
@@ -244,15 +242,18 @@ export default function Home() {
         <div className="wrap">
           <div className="offer-card ew reveal">
             <div>
-              <div className="eyebrow">The 8-week group program</div>
-              <h2>Eight weeks of the questions that actually change how you see yourself.</h2>
+              <div className="eyebrow">$897 · 8-week program</div>
+              <h2>What If I Knew I Couldn&apos;t Fail</h2>
+              <p>
+                Eight weeks of the questions that actually change how you see yourself.
+              </p>
               <p>
                 Not habit stacking. Not a nutrition plan. Not another challenge. This is small-group
                 identity work, moving from where am I to what is my why, alongside a handful of people
                 doing the same deep work at the same time.
               </p>
               <div className="offer-detail">$897 &nbsp;·&nbsp; SMALL GROUP &nbsp;·&nbsp; APPLICATIONS OPEN QUARTERLY</div>
-              <Link href="/8-week-program" className="cta">Explore the 8-Week Program <span className="arrow">→</span></Link>
+              <Link href="/what-if-i-knew-i-couldnt-fail" className="cta">Apply for the next cohort <span className="arrow">→</span></Link>
             </div>
             <div className="offer-side">
               <Image

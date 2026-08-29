@@ -7,8 +7,8 @@ import { useEffect, useState } from "react";
 
 const PROGRAMS = [
   { href: "/kitchen-reset", name: "Kitchen Reset" },
-  { href: "/30-day-challenge", name: "30-Day Challenge" },
-  { href: "/8-week-program", name: "8-Week Program" },
+  { href: "/stop-starting-monday", name: "Stop Starting Monday" },
+  { href: "/what-if-i-knew-i-couldnt-fail", name: "What If I Knew I Couldn't Fail" },
   { href: "/reclaim-her", name: "Reclaim Her" },
   { href: "/promise-kept", name: "Promise Kept" },
 ];

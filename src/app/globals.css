@@ -218,6 +218,9 @@ nav.site-nav {
   backdrop-filter: none;
   padding: 16px 0;
 }
+nav.site-nav > .wrap {
+  max-width: 1400px;
+}
 .nav-pill {
   display: flex;
   align-items: center;
@@ -245,17 +248,19 @@ nav.site-nav {
 .navlinks {
   display: flex;
   align-items: center;
-  gap: 17px;
-  font-size: 12px;
+  gap: 22px;
+  font-family: var(--font-body);
+  font-size: 14.5px;
   font-weight: 600;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
+  letter-spacing: 0;
+  text-transform: none;
   white-space: nowrap;
+  color: var(--ink);
 }
 .navlinks a {
   position: relative;
   text-decoration: none;
-  opacity: 0.72;
+  opacity: 0.66;
   transition: opacity 0.15s ease, color 0.15s ease;
   /* padding-bottom: 4px; */
 }
@@ -2048,7 +2053,7 @@ form {
 }
 
 /* ================= responsive ================= */
-@media (max-width: 1220px) {
+@media (max-width: 1300px) {
   .navlinks {
     display: none;
   }

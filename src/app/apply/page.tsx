@@ -4,9 +4,9 @@ import Link from "next/link";
 import ApplyForm from "@/components/ApplyForm";
 
 export const metadata: Metadata = {
-  title: "Apply · The 8-Week Program | Trine",
+  title: "Apply · What If I Knew I Couldn't Fail | Trine",
   description:
-    "Application for Trine's 8-Week Program. $897 · small group · 8 weeks · applications open quarterly.",
+    "Application for Trine's 8-week program, What If I Knew I Couldn't Fail. $897 · small group · 8 weeks · applications open quarterly.",
 };
 
 export default function ApplyPage() {
@@ -27,7 +27,7 @@ export default function ApplyPage() {
 
       <section className="intro">
         <div className="wrap-narrow">
-          <div className="eyebrow">Application · The 8-Week Program</div>
+          <div className="eyebrow">Application · What If I Knew I Couldn&apos;t Fail</div>
           <h1>Before we begin, I&apos;d like to actually know you.</h1>
           <p>
             This isn&apos;t a checkout page. It&apos;s a small group, and small groups only work when

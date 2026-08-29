@@ -86,7 +86,7 @@ export default function KitchenResetPage() {
             <WaitlistForm tag="Kitchen Reset" buttonLabel="Notify me" />
           </div>
           <div className="hero-note" style={{ marginTop: "38px", color: "rgba(239,246,244,0.55)" }}>
-            Not ready to wait? <Link href="/30-day-challenge" style={{ color: "var(--gold)", textDecoration: "underline", textUnderlineOffset: "3px" }}>Start the 30-Day Challenge</Link> instead.
+            Not ready to wait? <Link href="/stop-starting-monday" style={{ color: "var(--gold)", textDecoration: "underline", textUnderlineOffset: "3px" }}>Try Stop Starting Monday</Link> instead.
           </div>
         </div>
       </section>

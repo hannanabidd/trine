@@ -5,9 +5,9 @@ import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "The 30-Day Challenge · Trine",
+  title: "Stop Starting Monday · Trine",
   description:
-    "One habit. Thirty days. $59 with a weekly coaching call. Proof that you can actually keep a promise to yourself.",
+    "A 30-day challenge to finally change the habit you've been trying to change. $59 with a weekly coaching call.",
 };
 
 function ProgressStrip() {
@@ -30,17 +30,18 @@ export default function ThirtyDayPage() {
         <div className="bignum">30</div>
         <div className="wrap">
           <div className="content">
-            <div className="eyebrow">The 30-day challenge · $59</div>
-            <h1>One habit. Thirty days. Proof that you can actually keep a promise to yourself.</h1>
+            <div className="eyebrow">$59 · 30-day challenge</div>
+            <h1>Stop Starting Monday</h1>
             <p className="sub" style={{ maxWidth: "560px" }}>
-              The smallest real step on the ladder: pick one habit and commit to it for thirty
-              days, with a weekly coaching call to keep you honest and moving. Not a detox. Not a
-              diet. A trial run for doing this differently.
+              A 30-day challenge to finally change the habit you&apos;ve been trying to change.
+              Pick one habit and commit to it for thirty days, with a weekly coaching call to keep
+              you honest and moving. Not a detox. Not a diet. A trial run for doing this
+              differently.
             </p>
             <ProgressStrip />
             <div className="progress-caption">Day 1 looks like day 30. Small, consistent, unglamorous, and it works.</div>
             <div style={{ marginTop: "30px", maxWidth: "460px" }}>
-              <WaitlistForm tag="30-Day Challenge" buttonLabel="Claim your spot" />
+              <WaitlistForm tag="Stop Starting Monday (30-Day Challenge)" buttonLabel="Start today" />
             </div>
           </div>
         </div>
@@ -111,7 +112,7 @@ export default function ThirtyDayPage() {
           <h2>Day 1 starts when you say yes.</h2>
           <p className="sub2">Thirty days from now, you&apos;ll either still be talking about doing this, or you&apos;ll have already done it.</p>
           <div style={{ maxWidth: "460px", margin: "0 auto" }}>
-            <WaitlistForm tag="30-Day Challenge" buttonLabel="Claim your spot" />
+            <WaitlistForm tag="Stop Starting Monday (30-Day Challenge)" buttonLabel="Start today" />
           </div>
           <div className="recipe-line">Life is a recipe. <b>What are you creating?</b></div>
         </div>

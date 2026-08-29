@@ -23,8 +23,8 @@ export default function SiteFooter() {
             <h4>Programs</h4>
             <ul>
               <li><Link href="/kitchen-reset">Kitchen Reset</Link></li>
-              <li><Link href="/30-day-challenge">30-Day Challenge</Link></li>
-              <li><Link href="/8-week-program">8-Week Program</Link></li>
+              <li><Link href="/stop-starting-monday">Stop Starting Monday</Link></li>
+              <li><Link href="/what-if-i-knew-i-couldnt-fail">What If I Knew I Couldn&apos;t Fail</Link></li>
               <li><Link href="/reclaim-her">Reclaim Her</Link></li>
               <li><Link href="/promise-kept">Promise Kept</Link></li>
             </ul>
