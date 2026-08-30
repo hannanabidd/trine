@@ -36,7 +36,7 @@ export default function ContactForm() {
 
   if (status === "sent") {
     return (
-      <div className="contact-form-card">
+      <div className="contact-form-card" id="contact-form">
         <h3 style={{ marginBottom: "10px" }}>Got it. Thank you.</h3>
         <p style={{ fontSize: "15px", color: "var(--text-soft)", lineHeight: 1.6, margin: 0 }}>
           Your message landed straight in my inbox, and I read every one myself. I&apos;ll get back to
@@ -47,7 +47,7 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="contact-form-card">
+    <form onSubmit={handleSubmit} className="contact-form-card" id="contact-form">
       <div className="field">
         <label htmlFor="c-name">Name</label>
         <input type="text" id="c-name" name="Name" required />

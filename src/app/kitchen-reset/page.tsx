@@ -7,7 +7,7 @@ import JourneyPosition from "@/components/JourneyPosition";
 import WaitlistForm from "@/components/WaitlistForm";
 
 export const metadata: Metadata = {
-  title: "Kitchen Reset · Trine",
+  title: "Kitchen Reset · A Free First Step · Trine",
   description:
     "A free, practical first step for anyone who wants their home environment to support who they're becoming. Coming soon from Trine.",
 };

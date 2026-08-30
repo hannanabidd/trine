@@ -6,7 +6,7 @@ import ContactForm from "@/components/ContactForm";
 import { MailIcon, PinIcon, ClockIcon } from "@/components/ContactIcons";
 
 export const metadata: Metadata = {
-  title: "Contact · Trine",
+  title: "Contact · Book a Free 15-Minute Chat · Trine",
   description:
     "Get in touch with Katrina Gall at Trine. No pitch, no pressure. Just an honest conversation about where you're at.",
 };
@@ -63,7 +63,7 @@ export default function ContactPage() {
               <div className="info-card-cta">
                 <h3>Prefer to talk first?</h3>
                 <p>Book a free 15-minute chat, no pitch, no obligation.</p>
-                <a href="#" className="cta on-dark">Book a chat <span className="arrow">→</span></a>
+                <a href="#contact-form" className="cta on-dark">Book a chat <span className="arrow">→</span></a>
               </div>
             </div>
           </div>

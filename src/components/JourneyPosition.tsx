@@ -1,4 +1,12 @@
-const STAGES = ["Awaken", "Reset", "Rebuild", "Reclaim", "Live differently"];
+import Link from "next/link";
+
+const STAGES = [
+  { label: "Awaken", href: "/kitchen-reset" },
+  { label: "Reset", href: "/stop-starting-monday" },
+  { label: "Rebuild", href: "/what-if-i-knew-i-couldnt-fail" },
+  { label: "Reclaim", href: "/reclaim-her" },
+  { label: "Live differently", href: "/promise-kept" },
+];
 
 export default function JourneyPosition({ active }: { active: number }) {
   return (
@@ -9,11 +17,17 @@ export default function JourneyPosition({ active }: { active: number }) {
         ))}
       </div>
       <div className="jp-labels">
-        {STAGES.map((stage, i) => (
-          <span key={stage} className={i === active ? "jp-current" : undefined}>
-            {stage}
-          </span>
-        ))}
+        {STAGES.map((stage, i) =>
+          i === active ? (
+            <span key={stage.label} className="jp-current">
+              {stage.label}
+            </span>
+          ) : (
+            <Link key={stage.label} href={stage.href}>
+              {stage.label}
+            </Link>
+          )
+        )}
       </div>
     </div>
   );

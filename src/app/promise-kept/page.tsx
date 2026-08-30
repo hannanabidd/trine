@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import WaitlistForm from "@/components/WaitlistForm";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "Promise Kept · Trine",
+  title: "Promise Kept · Year-Long Habit Membership · Trine",
   description:
     "A year-long commitment to yourself, built one habit at a time. $98/month · 12-month commitment · opens December.",
 };
@@ -123,6 +124,9 @@ export default function PromiseKeptPage() {
           <p className="sub2">New members welcome every month after launch. But the waitlist gets first access.</p>
           <div style={{ maxWidth: "460px", margin: "0 auto" }}>
             <WaitlistForm tag="Promise Kept" buttonLabel="Join the waitlist" />
+          </div>
+          <div className="hero-note" style={{ marginTop: "38px", color: "rgba(239,246,244,0.55)" }}>
+            Want more structured group support? <Link href="/what-if-i-knew-i-couldnt-fail" style={{ color: "var(--gold)", textDecoration: "underline", textUnderlineOffset: "3px" }}>Explore What If I Knew I Couldn&apos;t Fail</Link>.
           </div>
           <div className="recipe-line">Life is a recipe. <b>What are you creating?</b></div>
         </div>

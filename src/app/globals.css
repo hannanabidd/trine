@@ -1583,6 +1583,11 @@ form {
   line-height: 1.6;
   margin: 0 0 24px;
 }
+.faq-answer a {
+  color: var(--sage-700);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 
 /* ================= CLOSING band ================= */
 .closing {
@@ -1705,6 +1710,16 @@ form {
 }
 .jp-labels .jp-current {
   color: var(--sage-700);
+}
+.jp-labels a {
+  text-decoration: underline;
+  text-decoration-color: var(--sage-400);
+  text-underline-offset: 3px;
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+.jp-labels a:hover {
+  color: var(--sage-700);
+  text-decoration-color: var(--sage-700);
 }
 
 /* ================= KITCHEN RESET: atmosphere hero ================= */

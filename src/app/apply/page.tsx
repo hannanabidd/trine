@@ -4,7 +4,7 @@ import Link from "next/link";
 import ApplyForm from "@/components/ApplyForm";
 
 export const metadata: Metadata = {
-  title: "Apply · What If I Knew I Couldn't Fail | Trine",
+  title: "Apply · What If I Knew I Couldn't Fail · Trine",
   description:
     "Application for Trine's 8-week program, What If I Knew I Couldn't Fail. $897 · small group · 8 weeks · applications open quarterly.",
 };
@@ -27,7 +27,7 @@ export default function ApplyPage() {
 
       <section className="intro">
         <div className="wrap-narrow">
-          <div className="eyebrow">Application · What If I Knew I Couldn&apos;t Fail</div>
+          <div className="eyebrow">Application · <Link href="/what-if-i-knew-i-couldnt-fail" style={{ color: "inherit", textDecoration: "underline", textUnderlineOffset: "3px" }}>What If I Knew I Couldn&apos;t Fail</Link></div>
           <h1>Before we begin, I&apos;d like to actually know you.</h1>
           <p>
             This isn&apos;t a checkout page. It&apos;s a small group, and small groups only work when

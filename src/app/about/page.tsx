@@ -148,7 +148,7 @@ export default function AboutPage() {
             the questions you&apos;ve been avoiding, push when you need pushing, and remind you what
             you&apos;re capable of on the days you&apos;ve forgotten.
           </p>
-          <Link href="/#book" className="cta" style={{ marginTop: "10px" }}>Book a chat <span className="arrow">→</span></Link>
+          <Link href="#book" className="cta" style={{ marginTop: "10px" }}>Book a chat <span className="arrow">→</span></Link>
         </div>
       </section>
 
@@ -170,9 +170,9 @@ export default function AboutPage() {
           </FaqItem>
           <FaqItem question="Who is this for?">
             People who&apos;ve achieved a lot and are quietly questioning what&apos;s next. People done
-            with surface-level fixes, ready to look at the bigger picture. Reclaim Her is specifically
-            for women; everything else is open to anyone standing at that same crossroads. The easiest
-            way to know if it&apos;s a fit is a conversation.
+            with surface-level fixes, ready to look at the bigger picture. <Link href="/reclaim-her">Reclaim Her</Link> is
+            specifically for women; everything else is open to anyone standing at that same crossroads.
+            The easiest way to know if it&apos;s a fit is a conversation.
           </FaqItem>
           <FaqItem question="Where are sessions held?">
             Online, by video call. I&apos;m based in Brisbane, and work with people across Australia and internationally.
@@ -190,7 +190,7 @@ export default function AboutPage() {
           <div className="eyebrow center">Ready when you are</div>
           <h2>You don&apos;t have to sort this out alone.</h2>
           <p className="sub2">I can&apos;t do the work for you. But I can sit across from you while you do it.</p>
-          <a href="#" className="cta on-dark">Book a chat <span className="arrow">→</span></a>
+          <Link href="/contact" className="cta on-dark">Book a chat <span className="arrow">→</span></Link>
           <div className="recipe-line">Life is a recipe. <b>What are you creating?</b></div>
         </div>
       </section>

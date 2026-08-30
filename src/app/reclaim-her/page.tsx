@@ -7,7 +7,7 @@ import { BodyIcon, MindIcon, SoulIcon } from "@/components/PillarIcons";
 import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
-  title: "Reclaim Her · Trine",
+  title: "Reclaim Her · 6-Month Coaching for Women · Trine",
   description:
     "A six-month, 1:1 identity and transformation program for women ready to stop coasting and start living with intention. $5,997 · 1:1 · 6 months · women only.",
 };
@@ -41,7 +41,7 @@ export default function ReclaimHerPage() {
           <div className="offer-detail" style={{ maxWidth: "480px", marginTop: "20px" }}>
             $5,997 &nbsp;·&nbsp; 1:1 &nbsp;·&nbsp; 6 MONTHS &nbsp;·&nbsp; WOMEN ONLY
           </div>
-          <Link href="/#book" className="cta" style={{ marginTop: "10px" }}>Book a discovery call <span className="arrow">→</span></Link>
+          <Link href="#book" className="cta" style={{ marginTop: "10px" }}>Book a discovery call <span className="arrow">→</span></Link>
         </div>
       </section>
 
@@ -52,7 +52,7 @@ export default function ReclaimHerPage() {
               <h3>Book a discovery call</h3>
               <p>30 minutes with Katrina. No pressure, no pitch. Just an honest conversation.</p>
             </div>
-            <Link href="/#book" className="cta">Book now <span className="arrow">→</span></Link>
+            <Link href="#book" className="cta">Book now <span className="arrow">→</span></Link>
           </div>
         </div>
       </section>
@@ -139,7 +139,7 @@ export default function ReclaimHerPage() {
             It&apos;s for the woman who already knows something has to change, not because she&apos;s
             broken, because she&apos;s ready to stop putting herself last.
           </p>
-          <a href="#" className="cta on-dark">I&apos;m ready, book a call <span className="arrow">→</span></a>
+          <a href="#book" className="cta on-dark">I&apos;m ready, book a call <span className="arrow">→</span></a>
           <div className="alt">Want to start smaller first? Look at <Link href="/promise-kept">Promise Kept</Link>.</div>
         </div>
       </section>
@@ -152,7 +152,7 @@ export default function ReclaimHerPage() {
             You just have to be willing to meet her. I can&apos;t do this work for you. But I can make
             sure you&apos;re not doing it by yourself.
           </p>
-          <a href="#" className="cta">Book a discovery call <span className="arrow">→</span></a>
+          <Link href="/contact" className="cta">Book a discovery call <span className="arrow">→</span></Link>
           <div className="recipe-line">Life is a recipe. <b>What are you creating?</b></div>
         </div>
       </section>

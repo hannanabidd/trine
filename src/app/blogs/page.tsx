@@ -7,7 +7,7 @@ import BlogCard from "@/components/BlogCard";
 import { getBlogListing } from "@/lib/wordpress";
 
 export const metadata: Metadata = {
-  title: "Blogs · Trine",
+  title: "Blogs · Midlife & Identity Coaching Insights · Trine",
   description: "Notes on identity, habits, and rebuilding a life that actually feels like yours, from Katrina Gall.",
 };
 

@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import WaitlistForm from "@/components/WaitlistForm";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "Stop Starting Monday · Trine",
+  title: "Stop Starting Monday · 30-Day Habit Challenge · Trine",
   description:
     "A 30-day challenge to finally change the habit you've been trying to change. $59 with a weekly coaching call.",
 };
@@ -113,6 +114,9 @@ export default function ThirtyDayPage() {
           <p className="sub2">Thirty days from now, you&apos;ll either still be talking about doing this, or you&apos;ll have already done it.</p>
           <div style={{ maxWidth: "460px", margin: "0 auto" }}>
             <WaitlistForm tag="Stop Starting Monday (30-Day Challenge)" buttonLabel="Start today" />
+          </div>
+          <div className="hero-note" style={{ marginTop: "38px", color: "rgba(239,246,244,0.55)" }}>
+            Ready for more than habits? <Link href="/what-if-i-knew-i-couldnt-fail" style={{ color: "var(--gold)", textDecoration: "underline", textUnderlineOffset: "3px" }}>Explore What If I Knew I Couldn&apos;t Fail</Link>.
           </div>
           <div className="recipe-line">Life is a recipe. <b>What are you creating?</b></div>
         </div>

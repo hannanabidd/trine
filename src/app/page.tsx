@@ -366,7 +366,7 @@ export default function Home() {
             You just have to be willing to talk about it honestly, with someone who isn&apos;t going to
             hand you a meal plan and call it done.
           </p>
-          <a href="#" className="cta on-dark">Book a chat <span className="arrow">→</span></a>
+          <Link href="/contact" className="cta on-dark">Book a chat <span className="arrow">→</span></Link>
           <div className="recipe-line">Life is a recipe. <b>What are you creating?</b></div>
         </div>
       </section>

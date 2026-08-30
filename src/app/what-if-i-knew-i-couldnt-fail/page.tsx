@@ -5,7 +5,7 @@ import SiteFooter from "@/components/SiteFooter";
 import FaqItem from "@/components/FaqItem";
 
 export const metadata: Metadata = {
-  title: "What If I Knew I Couldn't Fail · Trine",
+  title: "What If I Knew I Couldn't Fail · 8-Week Identity Program · Trine",
   description:
     "Eight weeks of small-group identity work, application-based, $897. Eight weeks of the questions that actually change how you see yourself.",
 };
@@ -129,6 +129,9 @@ export default function EightWeekPage() {
           <h2>Eight weeks from now, you&apos;ll know a lot more about who you actually are.</h2>
           <p className="sub2">Applications are read personally. No forms disappearing into a void.</p>
           <Link href="/apply" className="cta on-dark">Apply for the next cohort <span className="arrow">→</span></Link>
+          <div className="hero-note" style={{ marginTop: "38px", color: "rgba(239,246,244,0.55)" }}>
+            Want deeper 1:1 support instead of a group? <Link href="/reclaim-her" style={{ color: "var(--gold)", textDecoration: "underline", textUnderlineOffset: "3px" }}>Discover Reclaim Her</Link> (women only).
+          </div>
           <div className="recipe-line">Life is a recipe. <b>What are you creating?</b></div>
         </div>
       </section>

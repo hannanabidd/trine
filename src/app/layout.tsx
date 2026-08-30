@@ -23,7 +23,7 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Trine · Do Life Differently",
+  title: "Trine · Midlife Identity Coaching, Do Life Differently",
   description:
     "Identity and life-direction coaching from Katrina Gall for people who built the life and lost themselves in it. Built from lived experience, not theory.",
 };

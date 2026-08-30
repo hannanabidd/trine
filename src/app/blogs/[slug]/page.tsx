@@ -45,6 +45,17 @@ export default async function BlogPostPage(props: PageProps<"/blogs/[slug]">) {
           <div className="blog-content" dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
           <div className="blog-detail-footer">
             <Link href="/blogs" className="cta ghost">← Back to all posts</Link>
+            <p style={{ marginTop: "26px", fontSize: "15px", color: "var(--text-soft)" }}>
+              Curious what working with Katrina actually looks like?{" "}
+              <Link href="/about" style={{ color: "var(--sage-700)", textDecoration: "underline", textUnderlineOffset: "3px" }}>
+                Read her story
+              </Link>{" "}
+              or{" "}
+              <Link href="/contact" style={{ color: "var(--sage-700)", textDecoration: "underline", textUnderlineOffset: "3px" }}>
+                get in touch
+              </Link>
+              .
+            </p>
           </div>
         </div>
       </article>
