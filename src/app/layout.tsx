@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Poppins, Inter, Instrument_Serif } from "next/font/google";
 import "./globals.css";
 
@@ -31,7 +32,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" data-scroll-behavior="smooth" className={`${poppins.variable} ${inter.variable} ${instrumentSerif.variable}`}>
-      <body>{children}</body>
+      <head>
+        <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css" />
+      </head>
+      <body>
+        {children}
+        <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="afterInteractive" />
+      </body>
     </html>
   );
 }

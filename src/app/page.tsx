@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
+import CalendlyButton from "@/components/CalendlyButton";
 import { BodyIcon, MindIcon, SoulIcon } from "@/components/PillarIcons";
 import Testimonials from "@/components/Testimonials";
 
@@ -31,9 +32,9 @@ export default function Home() {
               still questioning things, still waiting to feel like yourself again. This is for people
               exactly like you.
             </p>
-            <Link href="/#book" className="cta">
+            <CalendlyButton className="cta">
               Book a chat <span className="arrow">→</span>
-            </Link>
+            </CalendlyButton>
             <div className="hero-note">Free, 15 minutes. No pitch, no pressure. Just a conversation.</div>
           </div>
           <div className="photo-block reveal">
@@ -366,7 +367,7 @@ export default function Home() {
             You just have to be willing to talk about it honestly, with someone who isn&apos;t going to
             hand you a meal plan and call it done.
           </p>
-          <Link href="/contact" className="cta on-dark">Book a chat <span className="arrow">→</span></Link>
+          <CalendlyButton className="cta on-dark">Book a chat <span className="arrow">→</span></CalendlyButton>
           <div className="recipe-line">Life is a recipe. <b>What are you creating?</b></div>
         </div>
       </section>

@@ -4,6 +4,7 @@ import Link from "next/link";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 import FaqItem from "@/components/FaqItem";
+import CalendlyButton from "@/components/CalendlyButton";
 
 export const metadata: Metadata = {
   title: "About Trine · Katrina Gall",
@@ -148,7 +149,7 @@ export default function AboutPage() {
             the questions you&apos;ve been avoiding, push when you need pushing, and remind you what
             you&apos;re capable of on the days you&apos;ve forgotten.
           </p>
-          <Link href="#book" className="cta" style={{ marginTop: "10px" }}>Book a chat <span className="arrow">→</span></Link>
+          <CalendlyButton className="cta" style={{ marginTop: "10px" }}>Book a chat <span className="arrow">→</span></CalendlyButton>
         </div>
       </section>
 
@@ -190,7 +191,7 @@ export default function AboutPage() {
           <div className="eyebrow center">Ready when you are</div>
           <h2>You don&apos;t have to sort this out alone.</h2>
           <p className="sub2">I can&apos;t do the work for you. But I can sit across from you while you do it.</p>
-          <Link href="/contact" className="cta on-dark">Book a chat <span className="arrow">→</span></Link>
+          <CalendlyButton className="cta on-dark">Book a chat <span className="arrow">→</span></CalendlyButton>
           <div className="recipe-line">Life is a recipe. <b>What are you creating?</b></div>
         </div>
       </section>

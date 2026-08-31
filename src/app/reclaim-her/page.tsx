@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
+import CalendlyButton from "@/components/CalendlyButton";
 import { BodyIcon, MindIcon, SoulIcon } from "@/components/PillarIcons";
 import Testimonials from "@/components/Testimonials";
 
@@ -41,7 +42,7 @@ export default function ReclaimHerPage() {
           <div className="offer-detail" style={{ maxWidth: "480px", marginTop: "20px" }}>
             $5,997 &nbsp;·&nbsp; 1:1 &nbsp;·&nbsp; 6 MONTHS &nbsp;·&nbsp; WOMEN ONLY
           </div>
-          <Link href="#book" className="cta" style={{ marginTop: "10px" }}>Book a discovery call <span className="arrow">→</span></Link>
+          <CalendlyButton className="cta" style={{ marginTop: "10px" }}>Book a discovery call <span className="arrow">→</span></CalendlyButton>
         </div>
       </section>
 
@@ -52,7 +53,7 @@ export default function ReclaimHerPage() {
               <h3>Book a discovery call</h3>
               <p>30 minutes with Katrina. No pressure, no pitch. Just an honest conversation.</p>
             </div>
-            <Link href="#book" className="cta">Book now <span className="arrow">→</span></Link>
+            <CalendlyButton className="cta">Book now <span className="arrow">→</span></CalendlyButton>
           </div>
         </div>
       </section>
@@ -139,7 +140,7 @@ export default function ReclaimHerPage() {
             It&apos;s for the woman who already knows something has to change, not because she&apos;s
             broken, because she&apos;s ready to stop putting herself last.
           </p>
-          <a href="#book" className="cta on-dark">I&apos;m ready, book a call <span className="arrow">→</span></a>
+          <CalendlyButton className="cta on-dark">I&apos;m ready, book a call <span className="arrow">→</span></CalendlyButton>
           <div className="alt">Want to start smaller first? Look at <Link href="/promise-kept">Promise Kept</Link>.</div>
         </div>
       </section>
@@ -152,7 +153,7 @@ export default function ReclaimHerPage() {
             You just have to be willing to meet her. I can&apos;t do this work for you. But I can make
             sure you&apos;re not doing it by yourself.
           </p>
-          <Link href="/contact" className="cta">Book a discovery call <span className="arrow">→</span></Link>
+          <CalendlyButton className="cta">Book a discovery call <span className="arrow">→</span></CalendlyButton>
           <div className="recipe-line">Life is a recipe. <b>What are you creating?</b></div>
         </div>
       </section>

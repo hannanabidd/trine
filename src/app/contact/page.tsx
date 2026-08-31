@@ -3,6 +3,7 @@ import Image from "next/image";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 import ContactForm from "@/components/ContactForm";
+import CalendlyButton from "@/components/CalendlyButton";
 import { MailIcon, PinIcon, ClockIcon } from "@/components/ContactIcons";
 
 export const metadata: Metadata = {
@@ -63,7 +64,7 @@ export default function ContactPage() {
               <div className="info-card-cta">
                 <h3>Prefer to talk first?</h3>
                 <p>Book a free 15-minute chat, no pitch, no obligation.</p>
-                <a href="#contact-form" className="cta on-dark">Book a chat <span className="arrow">→</span></a>
+                <CalendlyButton className="cta on-dark">Book a chat <span className="arrow">→</span></CalendlyButton>
               </div>
             </div>
           </div>

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import CalendlyButton from "./CalendlyButton";
 
 const PROGRAMS = [
   { href: "/kitchen-reset", name: "Kitchen Reset" },
@@ -43,9 +44,9 @@ export default function SiteNav() {
           </div>
 
           <div className="nav-right">
-            <Link href="/#book" className="cta nav-cta-desktop">
+            <CalendlyButton className="cta nav-cta-desktop">
               Book a chat <span className="arrow">→</span>
-            </Link>
+            </CalendlyButton>
             <button
               type="button"
               className={`nav-burger${mobileOpen ? " open" : ""}`}
@@ -74,9 +75,9 @@ export default function SiteNav() {
         <Link href="/about" className={`m-link m-link-sm${pathname === "/about" ? " active" : ""}`} onClick={() => setMobileOpen(false)}>About</Link>
         <Link href="/blogs" className={`m-link${pathname.startsWith("/blogs") ? " active" : ""}`} onClick={() => setMobileOpen(false)}>Blogs</Link>
         <Link href="/contact" className={`m-link m-link-sm${pathname === "/contact" ? " active" : ""}`} onClick={() => setMobileOpen(false)}>Contact</Link>
-        <Link href="/#book" className="cta on-dark m-cta" onClick={() => setMobileOpen(false)}>
+        <CalendlyButton className="cta on-dark m-cta" onClick={() => setMobileOpen(false)}>
           Book a chat <span className="arrow">→</span>
-        </Link>
+        </CalendlyButton>
       </div>
     </nav>
   );
